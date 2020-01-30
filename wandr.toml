@@ -1,0 +1,20 @@
+interval = 3
+
+[[setups]]
+name = "Desk"
+on = ["eDP1", "DP1"]
+off = []
+exec = [
+  "MONITOR=DP1 $HOME/.scripts/bar.sh &",
+  "bspc monitor eDP1 -d 1 2",
+  "bspc monitor DP1 -d 3 4 5",
+]
+
+[[setups]]
+name = "Mobile"
+on = ["eDP1"]
+off = ["DP1"]
+exec = [
+  "MONITOR=eDP1 $HOME/.scripts/bar.sh &",
+  "bspc monitor eDP1 -d 1 2 3 4 5",
+]
