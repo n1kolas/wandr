@@ -1,6 +1,3 @@
-extern crate confy;
-extern crate serde_derive;
-extern crate tokio;
 mod config;
 mod monitor;
 
